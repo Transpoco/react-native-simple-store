@@ -23,8 +23,8 @@ function mockMultiSaveTestData() {
 	];
 }
 
-import AsyncStorage from '@react-native-community/async-storage';
-jest.mock('@react-native-community/async-storage', () => ({
+import AsyncStorage from '@react-native-async-storage/async-storage';
+jest.mock('@react-native-async-storage/async-storage', () => ({
 	setItem: jest.fn(() => {
 		return new Promise((resolve) => {
 			resolve(null);
